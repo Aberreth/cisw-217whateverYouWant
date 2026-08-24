@@ -1,0 +1,3 @@
+One new concept I noticed was interval data types. Interval data types are useful for calculating dates in relation to other dates. For example, an interval could be used to add a 30 days to a date to calculate when a warranty would expire.
+
+A question this chapter made me ask was how exactly the fixed point data type works. It's a bit hard to understand how to specify how many numbers would be included on each side of the decimal point without having a hands-on example.

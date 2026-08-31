@@ -14,17 +14,20 @@ CREATE TABLE teachers (
 
  
 
-INSERT INTO teachers (first_name, last_name, school, hire_date, salary)
-VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30', 36200),
-       ('Lee', 'Reynolds', 'F.D. Roosevelt HS', '1993-05-22', 65000),
-       ('Samuel', 'Cole', 'Myers Middle School', '2005-08-01', 43500),
-       ('Samantha', 'Bush', 'Myers Middle School', '2011-10-30', 36200),
-       ('Betty', 'Diaz', 'Myers Middle School', '2005-08-30', 43500),
-       ('Kathleen', 'Roush', 'F.D. Roosevelt HS', '2010-10-22', 38500);
+INSERT INTO games (title, genre, platform, release_year, rating)
+VALUES
+    ('Elden Ring', 'RPG', 'PC', 2022, 9.5),
+    ('Rocket League', 'Sports', 'PC', 2015, 8.5),
+    ('Super Smash Bros. Ultimate', 'Fighting', 'Switch', 2018, 9.0),
+    ('Minecraft', 'Sandbox', 'PC', 2011, 9.2),
+    ('Mario Kart 8 Deluxe', 'Racing', 'Switch', 2017, 8.8),
+    ('Marvel Rivals', 'Shooter', 'PC', 2024, 8.0),
+    ('Stardew Valley', 'Simulation', 'PC', 2016, 9.1),
+    ('The Legend of Zelda: Tears of the Kingdom', 'Adventure', 'Switch', 2023, 9.4);
 
 -- Select statement is used to retrieve data froom a table
 -- The * means to select all columns from the table
-SELECT * FROM public.teachers;
+SELECT * FROM games;
 
 -- If you only want to show certain columns
 -- Select these columns, from this table.

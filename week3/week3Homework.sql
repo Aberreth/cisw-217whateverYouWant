@@ -54,3 +54,13 @@ SELECT title, rating
 FROM movies
 WHERE rating > 8.1
 ORDER BY rating DESC;
+
+-- =============================================
+-- Chapter 4 Quick Skim
+-- =============================================
+
+-- New Concept:
+-- I learned that I can import a column with a delimiting character, such as a comma, by surrounding it in double quotes.
+
+-- Question:
+-- I still wonder what the use case for all these data types will be

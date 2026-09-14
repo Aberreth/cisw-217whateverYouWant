@@ -27,7 +27,7 @@ SET description = 'Wireless laser mouse.',
     rating = 4.7,
     last_updated = now(),
     in_stock = TRUE
-WHERE product_name = 'Gaming Mouse'
+WHERE product_name = 'Gaming Mouse';
 
 UPDATE products
 SET description = '88 key USB keyboard.',
@@ -35,7 +35,7 @@ SET description = '88 key USB keyboard.',
     rating = 4.1,
     last_updated = now(),
     in_stock = TRUE
-WHERE product_name = 'Mechanical Keyboard'
+WHERE product_name = 'Mechanical Keyboard';
 
 UPDATE products
 SET description = '120hz 1080P monitor.',
@@ -43,7 +43,7 @@ SET description = '120hz 1080P monitor.',
     rating = 4.5,
     last_updated = now(),
     in_stock = TRUE
-WHERE product_name = 'Monitor'
+WHERE product_name = 'Monitor';
 
 UPDATE products
 SET description = 'Surround sound HQ headset',
@@ -51,25 +51,25 @@ SET description = 'Surround sound HQ headset',
     rating = 4.8,
     last_updated = now(),
     in_stock = TRUE
-WHERE product_name = 'Headset'
+WHERE product_name = 'Headset';
 
 -- Part 5
 Update products
 SET price = 24.995
-WHERE product_name = 'Headset'
+WHERE product_name = 'Headset';
 -- The extra decimal is rounded up, and the price listed on the table is 25 exactly.
 
 -- Part 6
 -- 1
-SELECT * FROM public.products
+SELECT * FROM public.products;
 -- 2
-SELECT product_name, rating, price FROM public.products
+SELECT product_name, rating, price FROM public.products;
 -- 3
 SELECT * FROM public.products
-WHERE price > 20
+WHERE price > 20;
 -- 4
 SELECT * FROM public.products
-WHERE in_stock = TRUE
+WHERE in_stock = TRUE;
 -- 5
 SELECT * FROM public.products
-ORDER BY price DESC 
+ORDER BY price DESC;

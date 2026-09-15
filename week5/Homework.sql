@@ -75,3 +75,12 @@ WHERE multiplayer = TRUE;
 -- 5
 SELECT * FROM public.games
 ORDER BY id DESC;
+
+-- Part 6
+-- One new concept I learned is operating across columns. A useful feature highlighted in Chapter 5 is the ability to do math with multiple entire columns.
+-- A use case for this would be a database containing the income of multiple households, with a column for income and another column for expenses.
+-- A third column could be shown with the SELECT function that subtracts the expenses from the income, displaying the net income for each household.
+
+-- Another new concept I learned is joining tables with the JOIN function. Using JOIN, rows from multiple tables can be displayed as one table provided they share some columns.
+
+-- A question I have after skimming the chapter is how the structure of a database might be changed to be more efficient given the ability to combine certain tables when relevant with JOIN.

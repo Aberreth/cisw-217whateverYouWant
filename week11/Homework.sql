@@ -49,3 +49,17 @@ EXPLAIN ANALYZE SELECT * FROM products WHERE category = 'Skincare' AND price > 2
 --	  The scan using an index was significantly faster to execute, and negligibly longer to plan.
 -- 2. When the query selected for both price and category, increasing the amount of data that needed to be parsed.
 -- 3. Larger tables benefit greatly from using indexes, while smaller tables barely benefit, or can even be worse for using them.
+
+-- Reflection:
+--One to One table relationships
+-- In a One to One relationship, each ID in both tables has only one match, and there are no duplicate IDs.
+-- Joined tables with a One to One relationship would have only one row with an ID of 1 in the left table, and only one row with an ID of 1 in the right table.
+
+--One to Many table relationships
+-- In a One to Many relationship, a key value in the first table will match many rows in the second table.
+-- Tables joined with a One to Many relationship would have only one row with an ID of 1 in the left or right table, and many rows with an ID of 1 in the other table.
+
+--Many to Many table relationships
+-- In a Many to Many relationship, multiple rows in the first table will match multiple rows in the second table.
+-- As an example, one table could contain a list of students and their associated ID number, and another table could contain a list of classes.
+-- Each student ID will be associated with multiple classes, and each class will have multiple student IDs associated with it.

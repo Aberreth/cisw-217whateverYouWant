@@ -1,0 +1,18 @@
+PART A
+1. 100000 records.
+2. More data takes longer to parse.
+
+PART B
+1. Yes, as SEQ scan was used.
+2. 3,019 records.
+3. "Planning Time: 0.093 ms"
+   "Execution Time: 11.345 ms"
+
+PART C
+1. A SEQ scan was still used.
+2. The execution time was about the same.
+3. Postgre can calculate whether using an index would significantly speed up the search time or not, and choose what type of scan to use accordingly.
+
+PART D
+1. Yes, a bitmap index scan was performed instead.
+2. Postgre can calculate whether using an index would significantly speed up the search time or not, and choose what type of scan to use accordingly.

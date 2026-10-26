@@ -30,8 +30,7 @@ EXPLAIN ANALYZE SELECT * FROM products WHERE category = 'Skincare';
 CREATE INDEX idx_big_category ON products(category); 
 EXPLAIN ANALYZE SELECT * FROM products WHERE category = 'Skincare'; 
 
--- Yes, it switched to an index scan, and the execution time sped up by almost 10 seconds.
--- Planning time was a couple ms longer, however.
+-- No, an index scan was not used.
 
 CREATE INDEX idx_big_cat_price ON products(category, price); 
 EXPLAIN ANALYZE SELECT * FROM products WHERE category = 'Skincare' AND price > 200; 

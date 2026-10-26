@@ -1,0 +1,8 @@
+-- Small tables don't benefit from indexes
+-- When the entire table fits into memory, 
+-- its faster for SQL to read all rows directly than perform multiple index lookups
+-- Indexes have lookup overhead
+-- Each index lookup adds extra work, 
+-- PostgreSQL hs to look for the index, then retrieve the rows, then place them back together
+-- SQL chooses whatever is faster, this may result in having a SEQ scan rather tha an index scan.
+-- INdexes are extremely useful when databases have thousands or millions of rows

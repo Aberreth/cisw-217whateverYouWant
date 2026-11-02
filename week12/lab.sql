@@ -59,3 +59,9 @@ ON orders.customer_id=customers_id
 -- PK uniquely identifies rows
 -- FK links tables together
 -- Many Relationship types(1:1, 1:M, M:M)
+
+
+--Part 4
+-- 1. The relationship berween the tables is a one-to-many relationship, since each cutomer has many orders, but each order links back to one customer.
+-- 2. The orders would link to a null customer.
+-- 3. A foreign key prevents orphan records.
